@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+body {
+  --loader-color: #0c0c0c;
+}
