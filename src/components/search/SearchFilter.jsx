@@ -7,11 +7,11 @@ const SearchFilter = ({ setFilterText }) => {
   const handleFilter = (e) => {
     let filterValue = e.target.value;
     setFilterText(filterValue.trim());
-    console.log(filterValue)
+    console.log(filterValue);
   };
 
   return (
-    <div className="flex flex-col gap-4 w-1/2">
+    <div className="flex flex-col gap-4 w-auto">
       <label className="font-bold text-lg uppercase" htmlFor={searchFieldID}>
         Search by ID/Title
       </label>
@@ -22,7 +22,7 @@ const SearchFilter = ({ setFilterText }) => {
           name="search"
           placeholder="Search by ID/Title"
           id={searchFieldID}
-          className="pl-10 pr-4 py-4 border border-zinc-900 rounded-lg text-lg focus:outline-blue-600 focus:outline-2 hover:outline-blue-400 hover:outline-2 shadow-none"
+          className="pl-10 pr-4 py-4 min-h-16 border border-zinc-900 rounded-lg text-lg focus:outline-blue-600 focus:outline-2 hover:outline-blue-400 hover:outline-2 shadow-none"
           onChange={handleFilter}
         />
       </div>
@@ -31,7 +31,7 @@ const SearchFilter = ({ setFilterText }) => {
 };
 
 SearchFilter.propTypes = {
-  setFilterText: PropTypes.func
+  setFilterText: PropTypes.func,
 };
 
 export default SearchFilter;

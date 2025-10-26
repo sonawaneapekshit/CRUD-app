@@ -17,7 +17,7 @@ const Posts = ({ postArray, loading, filterText }) => {
           .filter((post) =>
             filterText !== ''
               ? typeof filterText === 'number'
-                ? post.id == filterText
+                ? post.id === filterText
                 : post.title.includes(filterText)
               : true,
           )
