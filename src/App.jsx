@@ -55,7 +55,7 @@ function App() {
 
   return (
     <>
-      <main className="bg-amber-100 min-h-screen text-zinc-900">
+      <main className="bg-sky-100 min-h-screen text-zinc-900">
         <div className="container xl:container-xl mx-auto pt-6 pb-4 py-5">
           <h1 className="font-bold text-6xl mb-8 text-center">
             Hello, Welcome to CRUD App

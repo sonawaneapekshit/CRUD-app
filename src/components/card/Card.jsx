@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Card = ({ sizeClasses = 'w-full', post }) => {
   const { title, userid, body, id } = post;
   return (
-    <div className={`flex justify-between flex-col border border-zinc-800 rounded p-4 ${sizeClasses}`}>
+    <div className={`flex justify-between flex-col border border-zinc-800 bg-blue-100 rounded p-4 ${sizeClasses}`}>
       <h2
         aria-label="post-title"
         className="article font-bold text-xl md:text-2xl"

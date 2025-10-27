@@ -21,7 +21,7 @@ const Posts = ({ postArray, loading, filterText }) => {
   console.log(postArray);
   return (
     <div
-      className={`min-h-80 grid ${
+      className={`min-h-96 grid border p-4 rounded bg-gray-100 ${
         filteredPosts.length > 0
           ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
           : 'grid-cols-1'
